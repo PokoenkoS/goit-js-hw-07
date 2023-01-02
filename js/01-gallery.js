@@ -30,7 +30,7 @@ function createGallery(galleryItems) {
 
 function handlerImg(evt) {
     evt.preventDefault()
-   
+
    if(!evt.target.classList.contains("gallery__image")){
     return;
    } const instance = basicLightbox.create(`
@@ -41,5 +41,14 @@ function handlerImg(evt) {
    
 }
 
+// window.addEventListener(`keydown`, onEscKeyPress)
+
+// function onEscKeyPress(evt) {
+// if(evt.code ==='Escape'){
+   
+// basicLightbox.instance.close()
+// console.log(evt.code);
+// }
+// }
 
 
