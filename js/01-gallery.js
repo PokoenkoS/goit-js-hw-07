@@ -41,14 +41,6 @@ function handlerImg(evt) {
    
 }
 
-// window.addEventListener(`keydown`, onEscKeyPress)
 
-// function onEscKeyPress(evt) {
-// if(evt.code ==='Escape'){
-   
-// basicLightbox.instance.close()
-// console.log(evt.code);
-// }
-// }
 
 

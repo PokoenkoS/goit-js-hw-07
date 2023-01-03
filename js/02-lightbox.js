@@ -26,7 +26,11 @@ function handlerImg(evt) {
        if(!evt.target.classList.contains("gallery__image")){
         return;
        }
-       var lightbox = new SimpleLightbox('.gallery a', `${alt}`);
+       const gallery = new SimpleLightbox('.gallery a', {
+        captions: true,
+        captionsData: "alt",
+        captionDelay: 250,
+    });
     }
 
-new SimpleLightbox('.gallery a')
+
