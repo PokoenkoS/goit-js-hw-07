@@ -20,17 +20,18 @@ function createGallery(galleryItems) {
     }).join("")
     }
 
+    const gallery = new SimpleLightbox('.gallery a', {
+        captions: true,
+        captionsData: "alt",
+        captionDelay: 250,
+    });
 function handlerImg(evt) {
         evt.preventDefault()
     
        if(!evt.target.classList.contains("gallery__image")){
         return;
        }
-       const gallery = new SimpleLightbox('.gallery a', {
-        captions: true,
-        captionsData: "alt",
-        captionDelay: 250,
-    });
+      
     }
 
 
